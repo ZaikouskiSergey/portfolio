@@ -1,25 +1,23 @@
 import React from 'react';
 import styled from "styled-components";
+import Logo from "components/logo/Logo";
+import Menu from "components/menu/Menu";
+import IconContact from "layout/header/IconContact";
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <a href='#'>
-                <img src={""} alt={''}/>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Tech Stack</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <Logo/>
+            <Menu/>
+            <IconContact/>
+
         </StyledHeader>
     );
 };
 const StyledHeader = styled.header`
   background-color: #86ea9e;
+  display: flex;
+  justify-content: space-between;
+  
 `
 export default Header;
