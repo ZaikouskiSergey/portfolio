@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import avatar from "../../../assets/images/my_avatar-webp.webp"
-import {FlexWrapper} from "layout/sections/main/FlexWrapper";
+import {FlexWrapper} from "components/FlexWrapper";
 
 export const Main = () => {
     return (
