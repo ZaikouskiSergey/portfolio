@@ -29,7 +29,6 @@ const StyledMain = styled.div`
     background: lightgray 40% / cover -130px 50px;
   }
 `
-
 const MainTitle = styled.h1`
 
 `

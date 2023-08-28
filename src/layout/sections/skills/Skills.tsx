@@ -13,8 +13,6 @@ export const Skills = () => {
                 <Icon iconId={"icon-html"}/>
                 <Icon iconId={"icon-css"}/>
             </FlexWrapper>
-
-
         </StyledSkills>
     );
 };
