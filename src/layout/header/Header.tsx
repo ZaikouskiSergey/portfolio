@@ -17,7 +17,6 @@ export const Header = () => {
 const StyledHeader = styled.header`
   background-color: #86ea9e;
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 `
 export default Header;
