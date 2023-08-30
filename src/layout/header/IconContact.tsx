@@ -9,5 +9,4 @@ export const IconContact = () => {
         </div>
     );
 };
-
 export default IconContact;

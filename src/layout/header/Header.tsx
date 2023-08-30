@@ -10,13 +10,14 @@ export const Header = () => {
             <Logo/>
             <Menu/>
             <IconContact/>
-
         </StyledHeader>
     );
 };
+
 const StyledHeader = styled.header`
   background-color: #86ea9e;
   display: flex;
   justify-content: space-between;  
 `
+
 export default Header;
