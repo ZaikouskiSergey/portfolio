@@ -28,9 +28,7 @@ const StyledMain = styled.div`
   }
 `
 const MainTitle = styled.h1`
-
 `
 const MainName = styled.h2`
-
 `
 
