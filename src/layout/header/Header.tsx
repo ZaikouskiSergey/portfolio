@@ -8,7 +8,9 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Logo/>
+
             <Menu/>
+
             <IconContact/>
         </StyledHeader>
     );
