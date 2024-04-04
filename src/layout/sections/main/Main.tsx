@@ -18,7 +18,8 @@ export const Main = () => {
 };
 const StyledMain = styled.div`
   min-height: 100vh;
-  background-color: #7bf3bb;
+  background-color:  #1F1F20;
+;
   img {
     width: 200px;
     height: 200px;
@@ -28,7 +29,10 @@ const StyledMain = styled.div`
   }
 `
 const MainTitle = styled.h1`
+    color:  #FFFFFF;
+
 `
 const MainName = styled.h2`
+  color:  #FFFFFF;
 `
 

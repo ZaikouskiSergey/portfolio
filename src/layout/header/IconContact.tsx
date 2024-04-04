@@ -1,5 +1,6 @@
 import React from 'react';
-import Icon from "components/icon/Icon";
+import {Icon} from "components/icon/Icon";
+
 
 export const IconContact = () => {
     return (
@@ -9,4 +10,3 @@ export const IconContact = () => {
         </div>
     );
 };
-export default IconContact;

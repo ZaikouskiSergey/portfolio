@@ -5,9 +5,9 @@ export const Menu = () => {
         <StyledMenu>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Tech Stack</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Testimony</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </StyledMenu>
@@ -17,7 +17,10 @@ const StyledMenu=styled.nav`
   ul {
     display: flex;
     gap: 50px;
+    list-style-type: none;  
+  }
+  a {
+    text-decoration: none;
   }
 `
 
-export default Menu;
