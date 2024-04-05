@@ -6,7 +6,6 @@ export const IconContact = () => {
     return (
         <div>
             <Icon iconId={"icon-github"} width='20' />
-
         </div>
     );
 };

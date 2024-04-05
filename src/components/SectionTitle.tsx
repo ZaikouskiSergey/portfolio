@@ -1,10 +1,10 @@
 import styled from "styled-components";
 export const SectionTitle = styled.h2`
-  color: #42446E;
+  color: #FFFFFF;
   text-align: center;
-  font-family: Poppins;
+  font-family: Josefin Sans;
   font-size: 48px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 26px; /* 54.167% */
+  font-weight: 600;
+  line-height: 36px; /* 54.167% */
 `

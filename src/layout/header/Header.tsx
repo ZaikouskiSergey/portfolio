@@ -6,10 +6,11 @@ import {Menu} from "components/menu/Menu";
 import {IconContact} from "layout/header/IconContact";
 
 export const Header = () => {
+    const menuItems = ["Home", "Skills", "Works", "Testimony", "Contact"]
     return (
         <StyledHeader>
             <Logo/>
-            <Menu/>
+            <Menu items={menuItems}/>
             <IconContact/>
         </StyledHeader>
     );
