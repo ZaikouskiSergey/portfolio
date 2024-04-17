@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Icon} from "components/icon/Icon";
 import {FlexWrapper} from "components/FlexWrapper";
 import {theme} from "styles/Theme";
+import {font} from "styles/Common";
 
 export const Footer = () => {
     return (
@@ -10,6 +11,11 @@ export const Footer = () => {
             <FlexWrapper direction={"column"} align={"center"}>
                 <Name>Siarhei Zaikouski</Name>
                 <SocialList>
+                    <SocialItem>
+                        <SocialLink>
+                            <Icon height={"21"} width={"21"} iconId={"icon-react"}/>
+                        </SocialLink>
+                    </SocialItem>
                     <SocialItem>
                         <SocialLink>
                             <Icon height={"21"} width={"21"} iconId={"icon-react"}/>
@@ -33,10 +39,9 @@ const StyledFooter = styled.footer`
   padding: 40px 0;
 `
 const Name = styled.h5`
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
+  ${font({family: "'Josefin Sans', sans-serif", weight: 700, fMax: 22, fMin: 16})};  
   letter-spacing: 3px;
+  
   
 `
 const SocialList = styled.ul`
@@ -61,7 +66,8 @@ const SocialLink = styled.a`
   color: ${theme.colors.accent};
   &:hover{
     color: ${theme.colors.primiryBg};
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    background-color: ${theme.colors.accent};
   }
 `
 const Copyright = styled.small`
