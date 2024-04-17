@@ -8,8 +8,8 @@ import {Container} from "components/Container";
 export const Skills = () => {
     return (
         <StyledSkills>
-            <SectionTitle>My Skills</SectionTitle>
             <Container>
+                <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
                     <Skill iconId={"icon-html"}
                            title={"My Skills"}
@@ -32,7 +32,7 @@ export const Skills = () => {
     );
 };
 const StyledSkills = styled.section`
-  
+
 `
 
 

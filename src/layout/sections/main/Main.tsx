@@ -25,15 +25,15 @@ export const Main = () => {
         </StyledMain>
     );
 };
-const StyledMain = styled.section`  
+const StyledMain = styled.section`
   min-height: 100vh;
-  display: flex; 
+  display: flex;
 `
 
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
-  margin-top: 65px;  
+ 
 
   &::before {
     z-index: -1;
@@ -45,15 +45,17 @@ const PhotoWrapper = styled.div`
     position: absolute;
     top: -24px;
     left: 24px;
-    @media ${theme.media.mobile} {
+    
+    @media ${theme.media.mobile}{
       width: 314px;
       height: 414px;
       top: -17px;
       left: 20px;
-
     }
   }
-
+  @media ${theme.media.mobile}{
+    margin-top: 65px;
+  }
 `
 const Photo = styled.img`
   width: 350px;
@@ -98,7 +100,7 @@ const MainName = styled.h2`
 
 
 `
-const SmallText = styled.span`
+const SmallText = styled.h2`
   font-size: 14px;
   font-weight: 400;
 `

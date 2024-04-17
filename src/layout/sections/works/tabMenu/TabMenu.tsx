@@ -15,14 +15,16 @@ export const TabMenu = ({items}: MenuItemsProps) => {
         </StyledTabMenu>
     );
 };
-const StyledTabMenu = styled.nav`
-  margin-bottom: 40px;
+const StyledTabMenu = styled.nav` 
+
   ul {
     display: flex;
-    gap: 20px;
     list-style-type: none;
-    justify-content: center;
-  }  
+    justify-content: space-between;
+    max-width: 352px;
+    width: 100%;
+    margin: 0 auto 40px;
+  }
 `
 const ListItem= styled.li`
   
