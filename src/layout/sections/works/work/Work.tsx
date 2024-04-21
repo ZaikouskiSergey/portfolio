@@ -9,7 +9,7 @@ type WorkProps = {
     text: string
     src: string
 }
-export const Work = ({title, text, src}: WorkProps) => {
+export const Work: React.FC<WorkProps> = ({title, text, src}: WorkProps) => {
     return (
         <StyledWork>
             <ImageWrapper>
@@ -28,7 +28,7 @@ export const Work = ({title, text, src}: WorkProps) => {
 };
 const StyledWork = styled.div`
   width: 330px;
-  
+
   background-color: ${theme.colors.secondaryBg};
   object-fit: cover;
   flex-grow: 1;
@@ -40,7 +40,8 @@ const StyledWork = styled.div`
       margin-left: 20px;
     }
   }
-  @media ${theme.media.desktop}{
+
+  @media ${theme.media.desktop} {
     max-width: 540px;
   }
 `
@@ -60,12 +61,12 @@ const ImageWrapper = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
 
-    &::before{
+    &::before {
       width: 100%;
       height: 100%;
     }
   }
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -82,21 +83,23 @@ const ImageWrapper = styled.div`
     &::before {
       opacity: 1;
     }
-    ${Button} {
-      opacity: 1;
-    }
-  }
-  
-  @media ${theme.media.tablet}{
-    &::before {
-      opacity: 1;
-    }
+
     ${Button} {
       opacity: 1;
     }
   }
 
-  
+  @media ${theme.media.tablet} {
+    &::before {
+      opacity: 1;
+    }
+
+    ${Button} {
+      opacity: 1;
+    }
+  }
+
+
 
 
 `
