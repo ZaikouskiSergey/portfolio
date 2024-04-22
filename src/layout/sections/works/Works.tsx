@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import {S} from "../works/Works_Styles";
 import {SectionTitle} from "components/SectionTitle";
 import {FlexWrapper} from "components/FlexWrapper";
 import {Work} from "layout/sections/works/work/Work";
@@ -21,7 +21,7 @@ const workData=[
 export const Works: React.FC = () => {
     const worksItems = ["all", "LANDING Page", "REACT", "SPA"]
     return (
-        <StyledWorks>
+        <S.Works>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu items={worksItems}/>
@@ -33,12 +33,7 @@ export const Works: React.FC = () => {
                         src={work.src}/>)}
                 </FlexWrapper>
             </Container>
-        </StyledWorks>
+        </S.Works>
     );
 };
 
-const StyledWorks = styled.section`
-  ${FlexWrapper}{
-    gap: 30px;
-  }  
-`

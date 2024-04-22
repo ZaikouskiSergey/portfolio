@@ -5,7 +5,7 @@ import {Button} from "components/Button";
 import {Container} from "components/Container";
 import {FlexWrapper} from "components/FlexWrapper";
 
-export const Slogan = () => {
+export const Slogan: React.FC = () => {
     return (
         <StyledSlogan>
             <Container>
@@ -19,5 +19,4 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
-
 `
