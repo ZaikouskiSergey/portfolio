@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {S} from "../works/Works_Styles";
 import {SectionTitle} from "components/SectionTitle";
 import {FlexWrapper} from "components/FlexWrapper";
@@ -7,26 +7,66 @@ import picture from '../../../assets/images/snapedit_1692384718547.svg'
 import {Container} from "components/Container";
 import {TabMenu} from "layout/sections/works/tabMenu/TabMenu";
 
-const workData=[
-    { title: "Counter",
+export type StatusType = "all" | "landing" | "react" | "spa"
+
+const worksData = [
+    {
+        title: "Counter",
         src: picture,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        type: "spa"
     },
-    { title: "Social network",
+    {
+        title: "Social network",
         src: picture,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolomagna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolomagna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        type: "react"
+    },
+]
+
+const tabItems: { title: string, status: StatusType }[] = [
+    {
+        title: "All",
+        status: "all"
+    }, {
+        title: "LANDING Page",
+        status: "landing"
+    }, {
+        title: "REACT",
+        status: "react"
+    }, {
+        title: "SPA",
+        status: "spa"
     },
 ]
 
 export const Works: React.FC = () => {
-    const worksItems = ["all", "LANDING Page", "REACT", "SPA"]
+    const [currentFilterStatus, setCurrentFilterStatus] = useState<StatusType>('all')
+
+    let filteredWorks = worksData
+
+    if (currentFilterStatus === 'landing') {
+        filteredWorks = worksData.filter(work => work.type === 'landing')
+    }
+    if (currentFilterStatus === 'react') {
+        filteredWorks = worksData.filter(work => work.type === 'react')
+    }
+    if (currentFilterStatus === 'spa') {
+        filteredWorks = worksData.filter(work => work.type === 'spa')
+    }
+
+    function changeFilterStatus(value: StatusType) {
+        setCurrentFilterStatus(value)
+    }
+
     return (
         <S.Works>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
-                <TabMenu items={worksItems}/>
+                <TabMenu items={tabItems} changeFilterStatus={changeFilterStatus}
+                         currentFilterStatus={currentFilterStatus}/>
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={'wrap'}>
-                    {workData.map((work, index) => <Work
+                    {filteredWorks.map((work, index) => <Work
                         key={index}
                         title={work.title}
                         text={work.text}
