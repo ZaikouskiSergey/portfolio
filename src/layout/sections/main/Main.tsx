@@ -4,8 +4,11 @@ import {FlexWrapper} from "components/FlexWrapper";
 import {Container} from "components/Container";
 import {S} from "../main/Main_styles";
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 export const Main: React.FC = () => {
+    const scale = 1.1;
+
     return (
         <S.StyledMain>
             <Container>
@@ -25,10 +28,12 @@ export const Main: React.FC = () => {
                             />
                         </S.MainTitle>
                     </div>
-
-                    <S.PhotoWrapper>
-                        <S.Photo src={avatar} alt="avatar"/>
-                    </S.PhotoWrapper>
+                    <Tilt scale={scale} transitionSpeed={2500}
+                    >
+                        <S.PhotoWrapper>
+                            <S.Photo src={avatar} alt="avatar"/>
+                        </S.PhotoWrapper>
+                    </Tilt>
                 </FlexWrapper>
             </Container>
         </S.StyledMain>
