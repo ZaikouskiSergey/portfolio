@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {Logo} from "components/logo/Logo";
-import {IconContact} from "layout/header/IconContact";
 import {Container} from "components/Container";
 import {FlexWrapper} from "components/FlexWrapper";
 import {MobileMenu} from "layout/header/headerMenu/mobileMenu/MobileMenu";
@@ -29,7 +28,6 @@ export const Header: React.FC = () => {
                     {width > breakpoint
                         ? <DesktopMenu items={menuItems}/>
                         : <MobileMenu items={menuItems}/>}
-                    <IconContact/>
                 </FlexWrapper>
             </Container>
         </S.StyledHeader>
