@@ -10,7 +10,7 @@ export const Main: React.FC = () => {
     const scale = 1.1;
 
     return (
-        <S.StyledMain>
+        <S.StyledMain id={'home'}>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-around"} wrap={'wrap'}>
                     <div>

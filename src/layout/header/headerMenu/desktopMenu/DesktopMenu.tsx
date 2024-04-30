@@ -2,13 +2,11 @@ import React from 'react';
 import {Menu} from "layout/header/headerMenu/menu/Menu";
 import {S} from 'layout/header/headerMenu/HeaderMenu_Styles';
 
-type MenuItemsProps = {
-    items: string[]
-}
-export const DesktopMenu: React.FC<MenuItemsProps> = ({items}: MenuItemsProps) => {
+
+export const DesktopMenu: React.FC = () => {
     return (
         <S.DesktopMenu>
-            <Menu items={items}/>
+            <Menu />
         </S.DesktopMenu>
     );
 };

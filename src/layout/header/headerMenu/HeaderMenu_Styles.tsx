@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import {theme} from "styles/Theme";
+import {Link} from "react-scroll";
 
 //DesktopMenu
 const DesktopMenu = styled.nav`
@@ -32,7 +33,14 @@ const Mask = styled.span`
 `
 const ListItem = styled.li`
   position: relative;
-
+ `
+const NavLink = styled(Link)`
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: transparent;
+  
   &::before {
     content: '';
     display: inline-block;
@@ -46,8 +54,7 @@ const ListItem = styled.li`
     z-index: 1;
     transform: scale(0);
   }
-
-  &:hover {
+  &:hover, &.active {
     &::before {
       transform: scale(1);
     }
@@ -61,13 +68,6 @@ const ListItem = styled.li`
       }
     }
   }
-`
-const Link = styled.a`
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  text-align: center;
-  color: transparent;
 `
 //MobileMenu
 const MobileMenu = styled.nav`
@@ -156,7 +156,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
 export const S = {
     Mask,
-    Link,
+    NavLink,
     ListItem,
     DesktopMenu,
     MobileMenu,
