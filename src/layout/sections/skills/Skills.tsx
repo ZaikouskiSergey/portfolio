@@ -41,7 +41,7 @@ export const Skills = () => {
             <Container>
                 <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-                    <Fade cascade damping={0.2}>
+                    <Fade cascade damping={0.2} style={{margin:'0 auto'}}>
                         {skillData.map((skill, index) =>
                             (<Skill key={index}
                                     iconId={skill.iconId}

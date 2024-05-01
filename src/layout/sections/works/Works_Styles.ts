@@ -11,11 +11,8 @@ const Works = styled.section`
   }
 `
 const Work = styled.div`
-  width: 330px;
-
   background-color: ${theme.colors.secondaryBg};
-  object-fit: cover;
-  flex-grow: 1;
+  object-fit: cover; 
 
   ${Link} {
     padding: 10px 0;
@@ -25,9 +22,9 @@ const Work = styled.div`
     }
   }
 
-  @media ${theme.media.desktop} {
-    max-width: 540px;
-  }
+  // @media ${theme.media.desktop} {
+  //   max-width: 540px;
+  // }
 `
 const Description = styled.div`
   padding: 25px 20px;`
