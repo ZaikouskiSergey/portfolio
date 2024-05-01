@@ -18,8 +18,8 @@ export const Work: React.FC<WorkProps> = ({title, text, src}: WorkProps) => {
             <S.Description>
                 <S.Title>{title}</S.Title>
                 <S.Text>{text}</S.Text>
-                <Link active href={"#"}>Demo</Link>
-                <Link href={"#"}>Code</Link>
+                <Link active href={""}>Demo</Link>
+                <Link href={""}>Code</Link>
             </S.Description>
         </S.Work>
     );

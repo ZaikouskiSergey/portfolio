@@ -19,6 +19,8 @@ export const Link = styled.a <{
   }
 
   &::before {
+    transition: ${theme.animations.transition};
+    height: 0;
     z-index: -1;
     content: '';
     display: inline-block;

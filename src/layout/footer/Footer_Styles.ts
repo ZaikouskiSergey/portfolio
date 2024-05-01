@@ -41,6 +41,7 @@ const SocialLink = styled.a`
     color: ${theme.colors.primiryBg};
     transform: translateY(-3px);
     background-color: ${theme.colors.accent};
+    transition: ${theme.animations.transition};
   }
 `
 const Copyright = styled.small`
