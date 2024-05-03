@@ -14,10 +14,10 @@ const menuItems = [
         title: "Works",
         href: 'works'
     },
-    {
-        title: "Testimony",
-        href: 'testimony'
-    },
+    // {
+    //     title: "Testimony",
+    //     href: 'testimony'
+    // },
     {
         title: "Contact",
         href: 'contact'

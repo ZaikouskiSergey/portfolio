@@ -6,12 +6,15 @@ import {Container} from "components/Container";
 import {FlexWrapper} from "components/FlexWrapper";
 
 export const Slogan: React.FC = () => {
+    const onclickBtn=()=>{
+        window.location.href= '#contact'
+    }
     return (
         <StyledSlogan id={'slogan'}>
             <Container>
                 <FlexWrapper direction={'column'} align={'center'}>
                     <SectionTitle>I Am Available For Freelance</SectionTitle>
-                    <Button>Hire me</Button>
+                    <Button onClick={onclickBtn}>Hire me</Button>
                 </FlexWrapper>
             </Container>
         </StyledSlogan>

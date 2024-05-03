@@ -8,8 +8,8 @@ export const Logo = () => {
         scroll.scrollToTop();
     };
     return (
-        <a href="#" onClick={handleClick}>
-            <Icon iconId={"icon-logo"} width={'30'}/>
+        <a href="#" onClick={handleClick} >
+            <Icon iconId={"icon-logo"} width={'30'} viewBox={"0 0 50 70"}/>
         </a>
     );
 };

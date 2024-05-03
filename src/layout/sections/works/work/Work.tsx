@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from "components/Link";
 import {Button} from "components/Button";
 import {S} from "../Works_Styles";
-import {useNavigate} from "react-router-dom";
 
 type WorkProps = {
     title: string
@@ -12,7 +11,6 @@ type WorkProps = {
     code: string
 }
 export const Work: React.FC<WorkProps> = ({title, text, src, demo, code}: WorkProps) => {
-
     const onclickBtn=()=>{
         window.location.href= (demo)
     }
