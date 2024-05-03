@@ -32,6 +32,7 @@ const SocialLink = styled.a`
   justify-content: center;
   width: 35px;
   height: 35px;
+  
 
   color: ${
           theme.colors.primiryBg
