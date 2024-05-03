@@ -11,7 +11,7 @@ const StyledSkill = styled.div`
   }
 `
 const SkillTitle = styled.h3`
-  margin: 70px 0 15px;
+  margin: 50px 0 15px;
   text-transform: uppercase;
 `
 const SkillText = styled.p`

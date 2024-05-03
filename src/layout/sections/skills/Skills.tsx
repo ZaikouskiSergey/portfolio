@@ -8,28 +8,49 @@ import {Fade} from "react-awesome-reveal";
 
 const skillData = [
     {
-        iconId: "icon-html",
-        title: "My Skills",
+        iconId: "javascript",
+        title: "javascript",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
     },
     {
-        iconId: "icon-html",
-        title: "My Skills",
+        iconId: "html",
+        title: "html5",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+    },
+
+    {
+        iconId: "react",
+        title: "React",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
     },
     {
-        iconId: "icon-html",
-        title: "My Skills",
+        iconId: "redux",
+        title: "redux",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
     },
     {
-        iconId: "icon-html",
-        title: "My Skills",
+        iconId: "TypeScript",
+        title: "typescript",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
     },
     {
-        iconId: "icon-html",
-        title: "My Skills",
+        iconId: "styledComponent",
+        title: "styled components",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+    },
+    {
+        iconId: "css",
+        title: "css3",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+    },
+    {
+        iconId: "storybook",
+        title: "storybook",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
+    },
+    {
+        iconId: "sass",
+        title: "sass",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
     },
 ]
@@ -41,7 +62,7 @@ export const Skills = () => {
             <Container>
                 <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-                    <Fade cascade damping={0.2} style={{margin:'0 auto'}}>
+                    <Fade cascade damping={0.2} style={{margin: '0 auto'}}>
                         {skillData.map((skill, index) =>
                             (<Skill key={index}
                                     iconId={skill.iconId}

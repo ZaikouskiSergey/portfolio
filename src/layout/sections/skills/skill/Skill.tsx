@@ -17,7 +17,7 @@ export const Skill = ({title, iconId, description}: SkillProps) => {
                     <Icon iconId={iconId} width={'50'}/>
                 </S.IconWrapper>
                 <S.SkillTitle>{title}</S.SkillTitle>
-                <S.SkillText>{description}</S.SkillText>
+                {/*<S.SkillText>{description}</S.SkillText>*/}
             </FlexWrapper>
         </S.StyledSkill>
     );
