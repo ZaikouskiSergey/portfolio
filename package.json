@@ -158,14 +158,13 @@
   "babel": {
     "presets": [
       [
-        "@babel/preset-env",
+        "react-app",
         {
           "targets": {
             "browsers": ["last 2 versions", "> 5%"]
           }
         }
-      ],
-      "@babel/preset-react"
+      ]
     ],
     "plugins": [
       [
