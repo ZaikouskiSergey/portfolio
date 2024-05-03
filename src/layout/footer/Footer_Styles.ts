@@ -34,13 +34,13 @@ const SocialLink = styled.a`
   height: 35px;
 
   color: ${
-          theme.colors.accent
+          theme.colors.primiryBg
   };
 
   &:hover {
     color: ${theme.colors.primiryBg};
     transform: translateY(-3px);
-    background-color: ${theme.colors.accent};
+    //background-color: ${theme.colors.accent};
     transition: ${theme.animations.transition};
   }
 `

@@ -4,9 +4,9 @@ import {FlexWrapper} from "components/FlexWrapper";
 import {S} from "./Footer_Styles";
 
 const socialItemData = [
-    {iconId: "icon-react"},
-    {iconId: "icon-react"},
-    {iconId: "icon-react"}
+    {iconId: "github", href:'https://github.com/ZaikouskiSergey' },
+    {iconId: "linkedin", href:'https://www.linkedin.com/in/siarhei-zaikouski/'},
+    {iconId: "telegram", href: 'https://t.me/SergeyZaikouski'}
 ]
 
 export const Footer: React.FC = () => {
@@ -17,8 +17,8 @@ export const Footer: React.FC = () => {
                 <S.SocialList>
                     {socialItemData.map((icon, index) =>
                         <S.SocialItem key={index}>
-                            <S.SocialLink>
-                                <Icon height={"21"} width={"21"} viewBox={"0 0 120 120"} iconId={icon.iconId}/>
+                            <S.SocialLink target={'_blank'} href={icon.href}>
+                                <Icon height={"21"} width={"21"} viewBox={"0 0 21 21"} iconId={icon.iconId}/>
                             </S.SocialLink>
                         </S.SocialItem>)}
                 </S.SocialList>
