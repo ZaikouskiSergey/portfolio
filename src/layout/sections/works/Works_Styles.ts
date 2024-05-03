@@ -53,8 +53,8 @@ const ImageWrapper = styled.div`
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
     opacity: 0;
     transition: ${theme.animations.transition};
   }
@@ -83,7 +83,7 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  object-fit: scale-down;
 `
 const Title = styled.h3`
   text-transform: capitalize;
