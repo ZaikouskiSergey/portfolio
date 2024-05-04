@@ -86,18 +86,6 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead"
-
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
     "@babel/preset-env": "^7.24.5",
     "@babel/preset-react": "^7.24.1",
@@ -161,7 +149,10 @@
         "react-app",
         {
           "targets": {
-            "browsers": ["last 2 versions", "> 5%"]
+            "browsers": [
+              "last 2 versions",
+              "> 5%"
+            ]
           }
         }
       ]
@@ -177,6 +168,18 @@
           "meaninglessFileNames": []
         }
       ]
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }
