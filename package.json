@@ -146,7 +146,7 @@
   "babel": {
     "presets": [
       [
-        "react-app",
+        "@babel/preset-env",
         {
           "targets": {
             "browsers": [
@@ -155,7 +155,8 @@
             ]
           }
         }
-      ]
+      ],
+      "@babel/preset-react"
     ],
     "plugins": [
       [
