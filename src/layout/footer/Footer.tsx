@@ -8,7 +8,6 @@ const socialItemData = [
     {iconId: "linkedin", href:'https://www.linkedin.com/in/siarhei-zaikouski/'},
     {iconId: "telegram", href: 'https://t.me/SergeyZaikouski'}
 ]
-
 export const Footer: React.FC = () => {
     return (
         <S.Footer>
